@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <!-- 使用官方推荐的CDN链接 -->
+    <script defer src="https://cdn.jsdelivr.net/npm/mathlive"></script>
+</head>
+<body>
+    <div style="width: 300px; height:auto; background-color: #EEE; border: 5px solid #CCC; border-radius: 10px; margin: auto; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+        <div style="width: auto; height: auto; background-color: #AAA; border: 5px solid #888; border-radius: 10px; margin: 10px; display: flex; align-items: center; justify-content: center;">
+
+            <p>计算</p>
+            <math-field readonly style="background-color: #AAA;">\sqrt{\frac{1}{2}}</math-field>
+            <p>得: </p>
+        </div>
+
+        <div sytle="margin: 10px; display: flex; flex: 1" >
+            <math-field id="input">输入最简</math-field>
+        </div>
+        
+        <div style="margin: 10px; display: flex; flex: 1; width: 20%; background-color: #AAA; border: 5px solid #888; border-radius: 10px; display: flex; align-items: center; justify-content: center;" onclick="if(document.getElementById('input').value.replace(/\s/g,'')==='\\frac{\\sqrt2}{2}')alert('答对惹'); else alert('(╯▔皿▔)╯')">
+            <p>提交</p>
+        </div>
+    </div>
+</html>
